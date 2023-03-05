@@ -1,0 +1,3 @@
+Get the application by running these commands:
+curl http://svcbot.default:8080/ping
+curl http://svcbot.default:8080/call
