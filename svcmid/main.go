@@ -29,7 +29,7 @@ type CurrentWeather struct {
 func main() {
 	r := gin.Default()
 	r.GET("/ping", pong)
-	r.GET("/call", handler2)
+	r.GET("/call", handler)
 	r.Run()
 }
 
@@ -40,7 +40,7 @@ func pong(c *gin.Context) {
 }
 
 func handler(c *gin.Context) {
-	resp, err := http.Get("http://svcbot.default:8080/call")
+	resp, err := http.Get("http://svcbot:8080/call")
 	if err != nil {
 		fmt.Printf("error: %s", err)
 	}

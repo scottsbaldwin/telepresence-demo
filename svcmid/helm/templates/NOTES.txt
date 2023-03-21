@@ -1,3 +1,3 @@
 Get the application by running these commands:
-curl http://svcmid.default:8080/ping
-curl http://svcmid.default:8080/call
+curl http://svcmid.{{ .Release.Namespace }}:8080/ping
+curl http://svcmid.{{ .Release.Namespace }}:8080/call

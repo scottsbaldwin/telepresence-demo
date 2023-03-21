@@ -1,3 +1,4 @@
 Get the application by running these commands:
-curl http://svctop.default:8080/ping
-curl http://svctop.default:8080/call
+curl http://svctop.{{ .Release.Namespace }}:8080/ping
+curl http://svctop.{{ .Release.Namespace }}:8080/call
+
